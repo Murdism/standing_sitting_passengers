@@ -62,12 +62,10 @@ In the above sample, there is only one person detected and he/she is sitting.
 ***Without ROS***  
 ```  
 python detect.py --weights 'runs/train/yolov7_passenger_monitoring_Final/weights/best.pt' --conf 0.25 --img-size 640 --source 0
-
 ```
 ***With ROS***
 ```  
 python detect.py --weights 'runs/train/yolov7_passenger_monitoring_Final/weights/best.pt' --conf 0.25 --img-size 640 --ros_topic --source 0
-
 ```
 The model was trained for 300 epochs, if you want to use the last saved weight; use the following:
 ```    
