@@ -91,9 +91,29 @@ python detect.py --weights 'runs/train/yolov7_passenger_monitoring_Final/weights
 ### **NOTE:** 
 *path/images/image.jpg*:  is path of the image.
 
-# To Train
+# Training
 Download Dataset from:
 [Dataset](https://kuacae-my.sharepoint.com/:f:/g/personal/100043387_ku_ac_ae/EuWNC6lIqbFKnhFcOijec44BSKkB2czz8lFgPPHaTcAtlQ?e=dT1Xju)
+
+## To train:
+- You can select any type of model from ***cfg/training*** such as yolo7-tiny.
+- Update number of classes in the configuration to the number of classes in the dataset
+- ***-name*** referes to the name of the new trained model
+- After setting up the dataset, update [datas/posture.yaml](https://github.com/Murdism/standing_sitting_passengers/blob/main/datas/posture.yaml) accordingly.
+### Distributed - Multi-GPU 
+From scratch:
+```
+python -m torch.distributed.launch --nproc_per_node 4 --master_port 9527 train.py --workers 8 --device 0,1 --sync-bn --batch-size 16  --img 640 640 --cfg cfg/training/yolov7.yaml --weights '' --name passenger_yolov7 --hyp data/hyp.scratch.p5.yaml
+```
+
+Single GPU finetuning for custom dataset
+
+``` shell
+# Finetune p5 models
+python train.py --workers 8 --device 0 --batch-size 32 --data datas/posture.yaml --img 640 640 --cfg cfg/training/yolov7.yaml --weights 'yolov7_training.pt' --name yolov7-custom --hyp data/hyp.scratch.custom.yaml
+```
+For more info refer to [original Yolov7](https://github.com/WongKinYiu/yolov7#readme) oh how to train on custom datatset.
+
 
 Sample Videos:
 
