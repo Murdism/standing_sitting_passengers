@@ -28,8 +28,8 @@ Install the rest of the requirements using the following command:
 pip install -r requirements.txt 
 ```
 ## Results:
-Results of training can be found [HERE](https://github.com/AV-Lab/RTA_sitting_standing_passengers/tree/main/runs/train/yolov7_passenger_monitoring_Final).  
-Trained Model can be found [HERE](https://github.com/AV-Lab/RTA_sitting_standing_passengers/tree/main/runs/train/yolov7_passenger_monitoring_Final/weights).
+Results of training can be found [HERE](https://github.com/Murdism/standing_sitting_passengers/tree/main/runs/train/yolov7_passenger_monitoring_Final).  
+Trained Model can be found [HERE](https://github.com/Murdism/standing_sitting_passengers/tree/main/runs/train/yolov7_passenger_monitoring_Final/weights).
 
  
 # Run
@@ -41,7 +41,7 @@ roscore
 ```  
 - Set the flag ***--ros_topic*** to True to run and publish Results. Just add --ros_topic when running detect.py
 
-- The results will be published on rostopic ***Passenger*** by default. The rate will be 10hz. Those parameters can be updated from [config.py](https://github.com/AV-Lab/RTA_sitting_standing_passengers/blob/main/config.py)
+- The results will be published on rostopic ***Passenger*** by default. The rate will be 10hz. Those parameters can be updated from [config.py](https://github.com/Murdism/standing_sitting_passengers/blob/main/config.py)
 -  To see results of the publisher, run the following command on terminal:
 ```  
 rostopic echo Passenger 
