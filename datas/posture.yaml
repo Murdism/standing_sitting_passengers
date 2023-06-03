@@ -1,0 +1,9 @@
+train: split_dataset/images/train
+val:   split_dataset/images/validation
+test:  split_dataset/images/test
+
+# number of classes
+nc: 2
+
+# class names
+names: ["sitting","standing"]

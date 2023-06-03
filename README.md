@@ -90,3 +90,10 @@ python detect.py --weights 'runs/train/yolov7_passenger_monitoring_Final/weights
 
 ### **NOTE:** 
 *path/images/image.jpg*:  is path of the image.
+
+# To Train
+Download Dataset from:
+[Dataset](https://kuacae-my.sharepoint.com/:f:/g/personal/100043387_ku_ac_ae/EuWNC6lIqbFKnhFcOijec44BSKkB2czz8lFgPPHaTcAtlQ?e=dT1Xju)
+
+
+![](https://kuacae.sharepoint.com/:v:/s/Self-drivingCarsResearch/EaFvzItQ7whFvKm51GT30scBnhQi4lAnPJqvqIbumJFldg?e=KI3Jhe)
