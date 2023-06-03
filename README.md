@@ -93,8 +93,9 @@ python detect.py --weights 'runs/train/yolov7_passenger_monitoring_Final/weights
 
 # To Train
 Download Dataset from:
-[Dataset](https://kuacae-my.sharepoint.com/:f:/g/personal/100043387_ku_ac_ae/EuWNC6lIqbFKnhFcOijec44BSKkB2czz8lFgPPHaTcAtlQ?e=dT1Xju)  
-***Sample Video***:    
-https://github.com/Murdism/standing_sitting_passengers/assets/63874457/9d6dc739-c989-4a4d-951b-04cdd22579e5
+[Dataset](https://kuacae-my.sharepoint.com/:f:/g/personal/100043387_ku_ac_ae/EuWNC6lIqbFKnhFcOijec44BSKkB2czz8lFgPPHaTcAtlQ?e=dT1Xju)
 
+Sample Videos:
+
+https://github.com/Murdism/standing_sitting_passengers/assets/63874457/063e6f03-fbfe-482c-b382-1ce80088f017
 
