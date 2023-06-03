@@ -115,7 +115,7 @@ python train.py --workers 8 --device 0 --batch-size 32 --data datas/posture.yaml
 For more info refer to [original Yolov7](https://github.com/WongKinYiu/yolov7#readme) oh how to train on custom datatset.
 
 
-Sample Videos:
+# Real-Time Performance:
 
 https://github.com/Murdism/standing_sitting_passengers/assets/63874457/063e6f03-fbfe-482c-b382-1ce80088f017
 
